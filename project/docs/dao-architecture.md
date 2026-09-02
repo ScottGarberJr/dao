@@ -14,11 +14,11 @@
 | Layer | Responsibility | System of record |
 | --- | --- | --- |
 | Project knowledge | Current DAO definition, plans, and history | `project/` |
-| Governance | Cross-team policies and decisions, when jointly defined | `project/docs/`, `project/sessions/` |
 | Teams | Scope, permissions, reporting, and work ownership | `teams/` |
 | Planning | Outcomes, milestones, risks, and status | `project/plans/` |
-| Automation | Approved intake, routing, and observability | `contracts/`, `schedules/` |
-| Evidence | Decisions and completed session records | `project/docs/decisions/`, `project/sessions/` |
+| Tools and actors | Future external capabilities and repeatable workflows | `tools/` |
+| Automation | Approved recurring execution | `schedules/`, `tools/` |
+| Evidence | Historical context, decisions, and completed session records | `project/sessions/` |
 
 ## Runtime, teams, and external capabilities
 
@@ -32,4 +32,4 @@ The user may work with Codex through desktop, mobile, or VS Code. GitHub-backed 
 
 ## Automation boundary
 
-Codex accesses external capabilities through the most appropriate MCP. n8n is one optional MCP provider for external tools and higher-level actors; it is not the DAO orchestrator. Outlook supplies event metadata to n8n only after an approved integration is configured. n8n validates and normalizes the event and may route it only according to a team-defined scope and permission model. The canonical interface is [`contracts/outlook-n8n.contract.yaml`](../../contracts/outlook-n8n.contract.yaml).
+Codex accesses external capabilities through the most appropriate MCP. n8n is one optional MCP provider for future external tools and higher-level actors; it is not the DAO orchestrator. Define an approved Outlook or calendar capability in `tools/` only after its use case, interface, permissions, safety considerations, and implementation approach are understood.

@@ -1,6 +1,6 @@
 # Teams
 
-Each team markdown is the source of truth for that team's scope, roles, permissions, reporting, interfaces, and active commitments. No team structure, role, or cadence is pre-defined in this scaffold. Create a team file only as the team is jointly defined.
+Each team markdown is the source of truth for that team's scope, roles, permissions, reporting, interfaces, and active commitments. The initial teams to define jointly are DevTeam, DesignTeam, OpsTeam, and Research. Create a team file only as the team is jointly defined.
 
 ## Charter template
 

@@ -5,9 +5,7 @@ DAO V1 is an operating scaffold for a small, accountable, automation-assisted or
 ## Start here
 
 - [DAO architecture](project/docs/dao-architecture.md)
-- [Governance placeholder](project/docs/governance.md)
 - [V1 delivery plan](project/plans/v1.md)
-- [Outlook/n8n contract](project/docs/contracts/outlook-n8n.md)
 - [Scheduling placeholder](schedules/README.md)
 
 ## Repository map
@@ -15,7 +13,6 @@ DAO V1 is an operating scaffold for a small, accountable, automation-assisted or
 ```
 project/     DAO-specific docs, plans, and historical session context
 teams/       charters and responsibility maps
-contracts/   machine-readable integration definitions
 schedules/   human and automation cadence specifications
 skills/      reusable playbooks (placeholder for V1)
 tools/       tool and actor definitions (placeholder for V1)

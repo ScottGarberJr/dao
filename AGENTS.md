@@ -10,21 +10,19 @@ Normal project repositories do not require an `AGENTS.md`; agents should discove
 
 ## Working agreements
 
-- Keep changes small, reviewable, and traceable to a plan or decision.
+- Keep changes small, reviewable, and traceable to current project documentation, a plan, or a session record.
 - Do not commit credentials, mailbox content, personal data, or production exports.
-- Treat `contracts/` as versioned interfaces; document breaking changes in `project/docs/decisions/`.
-- Record material decisions in `project/docs/decisions/`, meetings in `project/sessions/`, and execution status in `project/plans/`.
+- Record important discussions, decisions, and handoff context in the relevant monthly file in `project/sessions/`.
 - Propose schedule and automation changes before enabling them in a live service.
 
 ## Directory conventions
 
 | Path | Canonical content |
 | --- | --- |
-| `project/docs/` | Current DAO architecture, governance, security, and decisions |
+| `project/docs/` | Current DAO architecture and other durable DAO knowledge |
 | `project/plans/` | DAO implementation plans |
 | `project/sessions/` | Historical DAO discussion and handoff context |
 | `teams/` | Team charters and accountabilities |
-| `contracts/` | Machine-readable integration contracts |
 | `schedules/` | Cadences and automation timing specifications |
 | `skills/` | Reusable playbooks and future skills |
 | `tools/` | Tool and actor definitions |
@@ -33,5 +31,5 @@ Normal project repositories do not require an `AGENTS.md`; agents should discove
 
 1. Update the relevant source document.
 2. Validate structured YAML or JSON after editing it.
-3. Add a decision record for material policy or interface changes.
+3. Update the relevant monthly session record when context or a decision needs preserving.
 4. Keep generated execution state out of Git.
