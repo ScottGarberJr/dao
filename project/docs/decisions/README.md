@@ -1,4 +1,4 @@
-# Decision records
+# DAO decision records
 
 Create `YYYY-MM-DD-short-title.md` for each accepted decision that needs a durable record.
 

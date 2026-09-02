@@ -1,0 +1,35 @@
+# DAO architecture
+
+## Design principles
+
+1. **Codex is the primary driver.** Codex is the central assistant, planner, coordinator, and implementation environment; tools and automation support it rather than replace its reasoning.
+2. **GitHub is durable.** Important knowledge is written to the appropriate repository documentation rather than retained only in conversation.
+3. **Every repository has `project/`.** Current project truth lives in `project/docs/`, planned work in `project/plans/`, and historical context in `project/sessions/`.
+4. **Teams are declarative.** Each active team defines its scope, permissions, reporting, approaches, tools, standards, and escalation path in its team markdown.
+5. **Automation is not intelligence.** n8n and other automation execute approved, repeatable work; Codex remains responsible for planning, coordination, and decisions.
+6. **Privacy by default.** Git stores metadata and sanitized references—not message bodies, attachments, secrets, or personal data.
+
+## Operating layers
+
+| Layer | Responsibility | System of record |
+| --- | --- | --- |
+| Project knowledge | Current DAO definition, plans, and history | `project/` |
+| Governance | Cross-team policies and decisions, when jointly defined | `project/docs/`, `project/sessions/` |
+| Teams | Scope, permissions, reporting, and work ownership | `teams/` |
+| Planning | Outcomes, milestones, risks, and status | `project/plans/` |
+| Automation | Approved intake, routing, and observability | `contracts/`, `schedules/` |
+| Evidence | Decisions and completed session records | `project/docs/decisions/`, `project/sessions/` |
+
+## Runtime, teams, and external capabilities
+
+Codex is the runtime/environment for discussion, planning, delegation, implementation, review, and durable documentation. A model supplies intelligence; a team definition supplies reusable role behavior. These remain separate so models can be replaced without restructuring the DAO.
+
+Teams, skills, tools, and actors are declarative DAO capabilities. A tool exposes a useful concrete operation. An actor encapsulates a repeatable multi-step process. MCP provides standardized access to external capabilities, including optional n8n, Figma, GitHub, and future providers. Teams are not pre-defined in this scaffold; define each one jointly in `teams/` before use.
+
+## Interfaces and automation
+
+The user may work with Codex through desktop, mobile, or VS Code. GitHub-backed documentation preserves the same project context across those interfaces. Automation performs repeatable approved execution only; it does not replace Codex's planning, coordination, or decision-making.
+
+## Automation boundary
+
+Codex accesses external capabilities through the most appropriate MCP. n8n is one optional MCP provider for external tools and higher-level actors; it is not the DAO orchestrator. Outlook supplies event metadata to n8n only after an approved integration is configured. n8n validates and normalizes the event and may route it only according to a team-defined scope and permission model. The canonical interface is [`contracts/outlook-n8n.contract.yaml`](../../contracts/outlook-n8n.contract.yaml).

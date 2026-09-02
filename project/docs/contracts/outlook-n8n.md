@@ -1,6 +1,6 @@
 # Outlook → n8n contract
 
-The machine-readable V1 contract is [`contracts/outlook-n8n.contract.yaml`](../../contracts/outlook-n8n.contract.yaml). It defines the intake envelope for Outlook message events and the normalized routing result emitted by n8n.
+The machine-readable V1 contract is [`contracts/outlook-n8n.contract.yaml`](../../../contracts/outlook-n8n.contract.yaml). It defines the intake envelope for Outlook message events and the normalized routing result emitted by n8n.
 
 ## V1 guarantees
 

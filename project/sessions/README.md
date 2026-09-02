@@ -1,4 +1,4 @@
-# Sessions
+# DAO sessions
 
 Store each completed session as `YYYY-MM-DD-session-name.md`. Use this template for any jointly defined session.
 
