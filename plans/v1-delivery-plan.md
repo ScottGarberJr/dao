@@ -1,0 +1,23 @@
+# DAO V1 delivery plan
+
+- Owner: unassigned
+- Status: draft scaffold
+- Target outcome: A collaboratively defined operating baseline, with no assumed governance model, team structure, workflow, or cadence.
+
+## Milestones
+
+| Milestone | Exit criteria | Owner | Status |
+| --- | --- | --- | --- |
+| Team definitions | Teams jointly define scope, permissions, reporting, and ownership | unassigned | not started |
+| Governance definition | Cross-team governance added only when jointly agreed | unassigned | not started |
+| Intake design review | Owning team reviews contract, data handling, and exception path | unassigned | not started |
+| Workflow deployment | Approved workflow tested with sanitized fixtures | unassigned | not started |
+| Cadence definition | A team-defined need is approved and added to `schedules/` | unassigned | not started |
+
+## Risks
+
+| Risk | Mitigation | Owner |
+| --- | --- | --- |
+| Automation acts on ambiguous mail | Do not enable it until the owning team defines permissions and review gates | unassigned |
+| Sensitive data reaches Git | Minimal contract, `.gitignore`, and review checklist | unassigned |
+| Assumptions become policy | Mark drafts as unassigned until jointly agreed | unassigned |
