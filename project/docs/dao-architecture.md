@@ -24,7 +24,9 @@
 
 Codex is the runtime/environment for discussion, planning, delegation, implementation, review, and durable documentation. A model supplies intelligence; a team definition supplies reusable role behavior. These remain separate so models can be replaced without restructuring the DAO.
 
-Teams, skills, tools, and actors are declarative DAO capabilities. A tool exposes a useful concrete operation. An actor encapsulates a repeatable multi-step process. MCP provides standardized access to external capabilities, including optional n8n, Figma, GitHub, and future providers. Teams are not pre-defined in this scaffold; define each one jointly in `teams/` before use.
+Teams, tools, and actors are declarative DAO capabilities. A tool exposes a useful concrete operation. An actor encapsulates a repeatable multi-step process. `tools/` also maintains references to candidate upstream repositories, MCPs, and APIs before adoption. MCP provides standardized access to external capabilities, including optional n8n, Figma, GitHub, and future providers. Teams are not pre-defined in this scaffold; define each one jointly in `teams/` before use.
+
+Codex-native skills are separate from DAO Markdown. Use a native skill only for a stable, repeatable workflow that needs executable instructions or supporting resources; do not create a repository `skills/` catalog merely to store DAO documentation.
 
 ## Interfaces and automation
 

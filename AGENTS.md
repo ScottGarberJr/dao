@@ -24,8 +24,7 @@ Normal project repositories do not require an `AGENTS.md`; agents should discove
 | `project/sessions/` | Historical DAO discussion and handoff context |
 | `teams/` | Team charters and accountabilities |
 | `schedules/` | Cadences and automation timing specifications |
-| `skills/` | Reusable playbooks and future skills |
-| `tools/` | Tool and actor definitions |
+| `tools/` | Tool, actor, MCP, API, and upstream-reference registry |
 
 ## Change checklist
 
