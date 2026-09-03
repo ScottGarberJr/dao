@@ -1,20 +1,30 @@
 # Teams
 
-Each team markdown is the source of truth for that team's scope, roles, permissions, reporting, interfaces, and active commitments. The initial teams to define jointly are DevTeam, DesignTeam, OpsTeam, and Research. Create a team file only as the team is jointly defined.
+Each team directory is the source of truth for that team's scope, roles, permissions, reporting, interfaces, and active commitments. Its `README.md` catalogs shared instructions and lower-level documents. Uppercase Markdown documents define major lifecycle stages; lowercase Markdown documents support specific tasks.
+
+| Team | Entry document | Status |
+| --- | --- | --- |
+| [DevTeam](dev/README.md) | `teams/dev/README.md` | draft — pending review |
+| [OpsTeam](ops/README.md) | `teams/ops/README.md` | pending set up |
+| [Research](research/README.md) | `teams/research/README.md` | pending set up |
+| [Assistant](assistant/README.md) | `teams/assistant/README.md` | pending set up |
 
 ## Charter template
 
 ```md
-# Team: name
+# Team name
 
-- Lead:
+- Status:
 - Purpose:
-- Scope:
-- Roles and permissions:
+- Shared workflow:
+- Scope and permissions:
 - Interfaces:
-- Reporting:
-- Cadence requirements: none defined | describe approved requirement
+- Reporting and management:
 
-## Current commitments
-## Escalation path and decision process
+## Lifecycle-stage and task documents
+
+- [STAGE](STAGE.md) — major lifecycle stage
+- [task](task.md) — specific supporting task
+
+## Escalation and decision process
 ```
