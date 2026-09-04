@@ -16,6 +16,7 @@ Normal project repositories do not require an `AGENTS.md`; agents should discove
 - Do not commit credentials, mailbox content, personal data, or production exports.
 - Record important discussions, decisions, and handoff context in the relevant monthly file in `project/sessions/`.
 - Propose schedule and automation changes before enabling them in a live service.
+- When naming an external tool, MCP, API, skill, or upstream repository in DAO documentation, include a direct link to its official documentation or upstream source in the owning Markdown document.
 
 ## Directory conventions
 

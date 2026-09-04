@@ -2,7 +2,7 @@
 
 This directory is the DAO registry for future tools, actors, MCPs, APIs, and upstream repositories. It stores durable awareness and adoption decisions—not cloned source code, credentials, implementation exports, or live service data.
 
-`catalog.md` records candidates and references. An entry is not an installation, approval, connection, or permission grant. Create a dedicated tool or actor definition only when its use case, interface, implementation location, permissions, limitations, safety considerations, and owning team are understood.
+`catalog.md` records candidates and references. An entry is not an installation, approval, connection, or permission grant. Every external candidate must link directly to its official documentation or upstream source. Create a dedicated tool or actor definition only when its use case, interface, implementation location, permissions, limitations, safety considerations, and owning team are understood.
 
 n8n may implement approved tools or actors through MCP, but it is not the DAO orchestrator. Do not create an n8n implementation folder until a defined tool or actor requires one.
 
