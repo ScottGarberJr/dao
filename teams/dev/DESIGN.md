@@ -11,7 +11,7 @@ Define implementation-facing UX/UI direction, visual constraints, interaction be
 
 - Completed [DevTeam discovery](discovery.md).
 - A Figma file with discovery/reference pages and a designated design page.
-- The project-specific requirements and constraints from its `project/` documentation.
+- The project-specific requirements and constraints from `project/docs/requirements.md` and `project/docs/architecture.md`, or an explicitly labeled combined document.
 
 ## Workflow
 
@@ -46,7 +46,7 @@ Discussion comes first by default. Do not make Figma changes, overwrite an appro
 
 - An approved Figma design page that carries the selected design direction into implementation.
 - A project-specific `project/docs/design.md` based on the template, linking to the approved Figma file and relevant frames. For expanded projects, it remains the index to any supporting files in `project/docs/design/`.
-- A clear handoff of the Figma design page and design documentation to planning.
+- A clear handoff of the Figma design page and design documentation to [DevTeam review](team-review.md), alongside the requirements and architecture documents.
 
 ## Reporting and escalation
 

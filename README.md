@@ -5,7 +5,7 @@ DAO V1 is an operating scaffold for a small, accountable, automation-assisted or
 ## Start here
 
 - [DAO architecture](project/docs/dao-architecture.md)
-- [V1 delivery plan](project/plans/v1.md)
+- [V1.0 delivery plan](project/plans/v1.0.md)
 - [Scheduling placeholder](schedules/README.md)
 
 ## Repository map

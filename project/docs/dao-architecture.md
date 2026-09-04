@@ -4,7 +4,7 @@
 
 1. **Codex is the primary driver.** Codex is the central assistant, planner, coordinator, and implementation environment; tools and automation support it rather than replace its reasoning.
 2. **GitHub is durable.** Important knowledge is written to the appropriate repository documentation rather than retained only in conversation.
-3. **Every repository has `project/`.** Current project truth lives in `project/docs/`, planned work in `project/plans/`, and historical context in `project/sessions/`. Every project starts with `project/docs/design.md` as its design entry point; supporting files may live in `project/docs/design/` when needed.
+3. **Every repository has `project/`.** Current project truth lives in `project/docs/`, planned work in `project/plans/`, and historical context in `project/sessions/`. The default project set is `project/docs/requirements.md`, `project/docs/design.md`, and `project/docs/architecture.md`; larger deliverables may expand into matching folders. A single document may combine the three only when it explicitly says so.
 4. **Teams are declarative.** Each active team defines its scope, permissions, reporting, approaches, tools, standards, and escalation path in its directory. Its `README.md` provides shared workflow guidance; uppercase documents define major lifecycle stages, while lowercase subdocuments support specific tasks.
 5. **Automation is not intelligence.** n8n and other automation execute approved, repeatable work; Codex remains responsible for planning, coordination, and decisions.
 6. **Privacy by default.** Git stores metadata and sanitized references—not message bodies, attachments, secrets, or personal data.

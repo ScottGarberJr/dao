@@ -7,9 +7,9 @@
 ## Shared workflow
 
 1. Perform discovery through [discovery](discovery.md): collect client and competitor information, learn the relevant industry or niche, identify winning web-design practices, and create the Figma reference pages that inform design.
-2. Use `DESIGN.md` to point design agents at the discovery and reference pages in the relevant [Figma](https://developers.figma.com/docs/figma-mcp-server/) file. Turn that input into an actual design, then conduct a design review that considers the approved design skills and references needed to make the result distinctive, high-converting, and visually strong.
-3. Pass the approved Figma design page and linked, fleshed-out design documentation to planning. Resolve the requirements, design, and acceptance criteria with the user before implementation.
-4. Build on feature branches using the approved design and plan. Use supporting tools or [Instatic](https://github.com/CoreBunch/Instatic/blob/main/docs/features/mcp-connectors.md) only when their role, access, and safety boundary have been defined.
+2. Create the project’s first-draft `requirements.md`, `design.md`, and `architecture.md`. Use `DESIGN.md` to point design agents at the discovery and reference pages in the relevant [Figma](https://developers.figma.com/docs/figma-mcp-server/) file, then conduct a design review that considers approved design skills and references.
+3. Use [team review](team-review.md) to discuss and reconcile requirements, design, and architecture with the user and, when provided, an independent reviewer. Planning starts only after the user's explicit go-ahead.
+4. Create a version or patch plan, then build on feature branches using the approved documents and plan. Use supporting tools or [Instatic](https://github.com/CoreBunch/Instatic/blob/main/docs/features/mcp-connectors.md) only when their role, access, and safety boundary have been defined.
 5. Merge small, approved changes into `main`. For larger changes, complete the agreed testing before merging into `main`, which is the active deployment branch for Coolify.
 6. Verify approved work with evidence proportionate to risk, prepare it for testing and client review, then review applicable acceptance criteria with the user before asking to commit.
 7. Commit and push only with the user's direction.
@@ -22,6 +22,7 @@ DevTeam performs technical planning, implementation, testing, debugging, code re
 
 - [DESIGN](DESIGN.md) — implementation-facing design review, technical constraints, and shared design-tool references.
 - [discovery](discovery.md) — client/project discovery and Figma reference-page creation.
+- [team review](team-review.md) — requirements, design, and architecture review gate before planning.
 - [PLAN](PLAN.md) — feature planning and acceptance-criteria preparation.
 - [BUILD](BUILD.md) — implementation work.
 - [TEST](TEST.md) — verification and testing preparation.
@@ -32,7 +33,7 @@ DevTeam performs technical planning, implementation, testing, debugging, code re
 
 - **Design stage:** resolve UX/UI specifications and technical tradeoffs with the user through `DESIGN.md`.
 - **Discovery:** DevTeam performs project discovery through `discovery.md`; its deliverables become reference pages in the Figma file.
-- **Planning:** design passes the approved Figma design page and linked design documentation to planning.
+- **Planning:** after the user’s go-ahead, plan from the reviewed requirements, design, and architecture documents. A single combined document is permitted only when it explicitly states that it contains all three.
 - **Deployment:** `main` actively deploys to Coolify. A standing staging environment is not defined; consider a client-specific Coolify staging environment or an approved [ChatGPT Sites](https://openai.com/academy/chatgpt-sites/) demo/UAT environment only when the project warrants it.
 - **Testing team:** the user decides when multiple commits are handed off after that team is defined; DevTeam does not initiate autonomous handoffs.
 - **OpsTeam and Research:** request their input only when their relevant documents are defined and the task needs their specialized work.
