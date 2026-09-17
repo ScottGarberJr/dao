@@ -14,7 +14,7 @@ DAO V1 is an operating scaffold for a small, accountable, automation-assisted or
 project/     DAO-specific docs, plans, and historical session context
 teams/       charters and responsibility maps
 schedules/   human and automation cadence specifications
-tools/       tool, actor, MCP, API, and upstream-reference registry
+skills/      portable SOPs, capability guidance, and upstream references
 ```
 
 No live automation credentials or mailbox data belong here. Configure them in the target secret manager and n8n instance.

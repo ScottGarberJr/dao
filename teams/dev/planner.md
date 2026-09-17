@@ -1,4 +1,4 @@
-# PLAN
+# Dev Planner
 
 - Team: DevTeam
 - Status: draft — pending user review
@@ -11,7 +11,7 @@ Turn reviewed project documentation into a small, reviewable version or patch pl
 
 - The user's explicit approval to begin planning.
 - Reviewed `project/docs/requirements.md`, `project/docs/design.md`, and `project/docs/architecture.md`; or one document that explicitly states it contains requirements, design, and architecture details.
-- A Figma link or screenshots in `design.md` when the work has a UI.
+- Relevant design evidence in `design.md` when the work has a UI.
 - Resolved and deferred items from [team review](team-review.md).
 
 ## Workflow
@@ -20,7 +20,7 @@ Turn reviewed project documentation into a small, reviewable version or patch pl
 2. Create a version or patch document in `project/plans/` using the [plan-document template](plan-document-template.md): versions use `v<major>.0.md`, and patches use `v<major>.<patch>.md`.
 3. Use `major.patch.item` numbered headers for every planned feature or fix—for example, `1.0.1` in Version 1.0 and `1.1.1` in Patch 1.1. Each section has a name, one-line summary, task checklist, and acceptance-criteria checklist.
 4. For a Version 1.0 plan, make **1.0.1 — Project scaffolding and boilerplate** the first section. Include only the foundation actually required by the project.
-5. Keep scope deliberate: separate current work from later features, identify dependencies and open questions, and return material conflicts to the user or [team review](team-review.md).
+5. Keep scope deliberate: separate current work from later features, identify dependencies and open questions, and return material conflicts to the Lead, user, or [team review](team-review.md).
 6. Review the completed plan and acceptance criteria with the user. Build starts only when the user separately gives the go-ahead.
 
 ## Tools, skills, and references

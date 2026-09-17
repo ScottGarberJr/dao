@@ -1,6 +1,6 @@
 # Teams
 
-Each team directory is the source of truth for that team's scope, roles, permissions, reporting, interfaces, and active commitments. Its `README.md` catalogs shared instructions and lower-level documents. Uppercase Markdown documents define major lifecycle stages; lowercase Markdown documents support specific tasks.
+Each team directory is the source of truth for that team's scope, roles, permissions, reporting, interfaces, and active commitments. Its `README.md` catalogs shared instructions, role definitions, and supporting workflow documents. Roles are durable definitions; a role instance is created only when the work requires it and is disposable after its handoff.
 
 | Team | Entry document | Status |
 | --- | --- | --- |
@@ -21,10 +21,10 @@ Each team directory is the source of truth for that team's scope, roles, permiss
 - Interfaces:
 - Reporting and management:
 
-## Lifecycle-stage and task documents
+## Role and supporting documents
 
-- [STAGE](STAGE.md) — major lifecycle stage
-- [task](task.md) — specific supporting task
+- [role](role.md) — scope, workflow, authority, evidence, and handoff for a role
+- [workflow](workflow.md) — shared process or task guidance
 
 ## Escalation and decision process
 ```

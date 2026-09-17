@@ -1,4 +1,4 @@
-# BUILD
+# Dev Builder
 
 - Team: DevTeam
 - Status: draft — pending user review
@@ -9,15 +9,15 @@ Implement an approved plan item in the active project repository.
 
 ## Inputs
 
-- Approved Figma design context or an approved screenshot fallback.
+- Approved design evidence appropriate to the project.
 - An agreed implementation plan, acceptance criteria, and project-specific requirements.
 
 ## Workflow
 
-1. Read the implementation plan and Figma design context together; resolve a discrepancy with the user instead of silently choosing one.
+1. Read the implementation plan and design evidence together; resolve a discrepancy with the Lead or user instead of silently choosing one.
 2. Build reusable components and tokens first, then compose feature-level screens and flows on the approved feature branch.
-3. Compare the running implementation against the approved Figma frames at the target responsive breakpoints or device sizes.
-4. Keep generated Figma-to-code output as a starting point only; adapt it to the repository's framework, conventions, accessibility, state handling, and tests.
+3. Compare the running implementation against the approved design evidence at the target responsive breakpoints or device sizes.
+4. Keep generated design-to-code output as a starting point only; adapt it to the repository's framework, conventions, accessibility, state handling, and tests.
 
 ## Tools, skills, and references
 

@@ -1,4 +1,4 @@
-# TEST
+# Dev Tester
 
 - Team: DevTeam
 - Status: draft — pending user review
@@ -17,7 +17,7 @@ Verify approved work with evidence proportionate to its risk before the user rev
 1. Start with fast checks: formatting, linting, type checking, and focused unit or component tests.
 2. Test API contracts directly: happy path, validation and error paths, authorization boundaries, pagination or filtering, and important side effects. Use API calls to seed state for UI tests when appropriate.
 3. Test critical user journeys end to end in the UI: first-use flow, primary conversion or task flow, authentication, and regression cases for resolved defects.
-4. Add visual, responsive, accessibility, and interaction review against the Figma reference. Automated accessibility checks complement—rather than replace—keyboard, focus-order, screen-reader, and manual UX review.
+4. Add visual, responsive, accessibility, and interaction review against the approved design evidence. Automated accessibility checks complement—rather than replace—keyboard, focus-order, screen-reader, and manual UX review.
 5. Capture failure evidence, fix the defect, add a regression test where useful, and rerun the relevant layers before handoff.
 
 ## Tools, skills, and references

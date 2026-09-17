@@ -10,7 +10,7 @@ Resolve conflicts, gaps, and material tradeoffs in the first drafts of a project
 ## Inputs
 
 - First drafts of `project/docs/requirements.md`, `project/docs/design.md`, and `project/docs/architecture.md`, or one explicitly labeled combined document that contains all three.
-- The Figma file and links to relevant frames, or screenshots in `design.md` when Figma access is unavailable.
+- Relevant design evidence in `design.md`, such as Figma frames, screenshots, prototypes, or sketches.
 - Discovery, project constraints, and the user's stated goals.
 - Optional review input from a separately chosen model or agent, supplied through an approved connection or pasted by the user.
 
@@ -20,7 +20,7 @@ Resolve conflicts, gaps, and material tradeoffs in the first drafts of a project
 2. Compare requirements, design, and architecture for conflicts, missing states, feasibility, security/role implications, accessibility, UX, performance, and maintainability.
 3. Run only user-approved review tools or skills. Capture findings as proposals and discuss material changes before updating the project documents.
 4. Resolve, defer, or assign each material issue. Update the three documents and their open questions so the planning input is coherent.
-5. Ask the user for the go-ahead to begin `PLAN.md`; do not start planning merely because review has occurred.
+5. Ask the user for the go-ahead to begin planning; do not start planning merely because review has occurred.
 
 ## Scope, permissions, and constraints
 

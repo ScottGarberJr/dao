@@ -7,13 +7,15 @@ Sessions are historical context, not current instructions. When a session confli
 ```md
 # September 2026
 
-## 2026-09-02 — Session title
+## September 17
 
-### Discussion
-
-### Decisions
-
-### Open questions
-
-### Follow-up and handoff
+- 14:05 — Dev Lead — Continue V1
+  - Tasks
+    - Review the active plan and repository state.
+  - Decisions
+    - Delegate design work before planning.
+  - Next
+    - Handoff to Designer.
 ```
+
+Use one dated entry per material work period. Identify the acting role when useful, then capture tasks, decisions, evidence or open questions, and the next action. Parallel work may appear as separate time-stamped entries. Current project documents and plans remain authoritative.

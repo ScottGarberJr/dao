@@ -15,9 +15,9 @@ Perform project discovery and prepare its design handoff. This is a DevTeam task
 ## Workflow
 
 1. Collect client and competitor information, relevant industry or niche context, winning web-design practices, and linked or screenshot references.
-2. Create the discovery and reference pages in the Figma file; for client work, use them to drive the client discussion before planning or building.
+2. Create usable discovery evidence: reference pages, screenshots, notes, sketches, links, or Figma material. For client work, use it to drive the client discussion before planning or building.
 3. Confirm the discovery is complete enough to inform a design direction; request clarification from the user when it is not.
-4. Link the relevant Figma pages in the project-specific documentation and hand them, with project constraints, to `DESIGN.md`.
+4. Link the relevant evidence in the project-specific documentation and hand it, with project constraints, to the Designer.
 
 ## Tools, skills, and references
 

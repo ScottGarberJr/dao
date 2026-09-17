@@ -1,6 +1,6 @@
-# Tools catalog
+# Skills catalog
 
-This is a reference registry for candidates discovered during DAO V1 planning. Entries are not installed, connected, approved for use, forked, or starred unless a later decision says so.
+This is a reference registry for capability candidates discovered during DAO V1 planning. Entries are not installed, connected, approved for use, forked, or starred unless a later decision says so.
 
 ## Candidate capabilities
 
