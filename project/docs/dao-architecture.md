@@ -6,7 +6,7 @@
 2. **GitHub is durable.** Important knowledge is written to the appropriate repository documentation rather than retained only in conversation.
 3. **Every repository has `project/`.** Current project truth lives in `project/docs/`, planned work in `project/plans/`, and historical context in `project/sessions/`. The default project set is `project/docs/requirements.md`, `project/docs/design.md`, and `project/docs/architecture.md`; larger deliverables may expand into matching folders. A single document may combine the three only when it explicitly says so.
 4. **Teams and roles are declarative.** Each active team defines its scope, permissions, reporting, standards, roles, and escalation path in its directory. A role definition is durable; role instances are created only when useful and return a bounded handoff.
-5. **Automation is not intelligence.** Automation executes approved, repeatable work; the active Lead and model remain responsible for planning, coordination, and decisions.
+5. **Automation is not intelligence.** Automation executes approved, repeatable work; the active Head or project Lead and model remain responsible for coordination and decisions.
 6. **Privacy by default.** Git stores metadata and sanitized references—not message bodies, attachments, secrets, or personal data.
 
 ## Operating layers
@@ -30,7 +30,9 @@ Harness-native skills and extensions are separate from DAO Markdown. DAO `skills
 
 ## Interfaces and automation
 
-The user may work through any available interface. GitHub-backed documentation preserves the same project context across those interfaces. Automation performs repeatable approved execution only; it does not replace Lead coordination or model reasoning.
+The user may work through any available interface. GitHub-backed documentation preserves the same project context across those interfaces. Automation performs repeatable approved execution only; it does not replace Head or project Lead coordination or model reasoning. A delegated Scribe may maintain durable records and user-facing status artifacts, but does not make project decisions.
+
+The intended human-facing studio organization, persistent leadership roles, delegated task lifecycle, Herdr/Pi presentation, model fallback approach, and Gu messaging boundary are defined in [Studio orchestration](studio-orchestration.md). The organization uses Gu for the personal assistant and reserves DAO for the operating model: the way work is done.
 
 ## Automation boundary
 

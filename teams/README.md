@@ -7,7 +7,7 @@ Each team directory is the source of truth for that team's scope, roles, permiss
 | [DevTeam](dev/README.md) | `teams/dev/README.md` | draft — pending review |
 | [OpsTeam](ops/README.md) | `teams/ops/README.md` | draft — pending review |
 | [Research](research/README.md) | `teams/research/README.md` | pending set up |
-| [Assistant](assistant/README.md) | `teams/assistant/README.md` | draft — pending review |
+| [Gu](assistant/README.md) | `teams/assistant/README.md` | draft — pending review |
 
 ## Charter template
 

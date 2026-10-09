@@ -2,6 +2,8 @@
 
 This directory contains portable Markdown skills: context, standard operating procedures, capability boundaries, and adoption decisions an agent can use to do specific work. It is not a directory of executable tools or installed harness extensions.
 
+Start with [skill authoring](skill-authoring.md) when creating or revising a skill. Use [visual evidence](visual-evidence.md) for UI changes and PR evidence.
+
 `catalog.md` records candidates and references. An entry is not an installation, approval, connection, or permission grant. Every external candidate must link directly to its official documentation or upstream source. Create a dedicated skill when its use case, workflow, permissions, limitations, safety considerations, and owning team are understood.
 
 n8n or an MCP may implement an approved capability, but neither is the DAO orchestrator. Do not create an implementation folder until a defined capability requires one.

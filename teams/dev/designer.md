@@ -7,6 +7,12 @@
 
 Define implementation-facing UX/UI direction, visual constraints, interaction behavior, and design evidence for approved DevTeam work.
 
+## Recommended model routing
+
+- Default: `openai-codex/gpt-5.4-mini` for ordinary UX/UI discussion and design evidence.
+- Escalation: `openai-codex/gpt-5.6-luna` for complex product tradeoffs or accessibility-sensitive review.
+- Vision/local fallback: `ollama/dao-general:9b` when image input must remain local; qualify the task before relying on it for tool use.
+
 ## Inputs
 
 - Completed [DevTeam discovery](discovery.md).
@@ -21,6 +27,7 @@ Define implementation-facing UX/UI direction, visual constraints, interaction be
 4. Use the [project design-document template](design-document-template.md) to create or update the project's default `project/docs/design.md`. Link the relevant evidence. When a client requests it or the design warrants it, split sections into `project/docs/design/` while retaining `project/docs/design.md` as the entry-point index and summary.
 5. Review hierarchy, usability, responsive behavior, accessibility, visual distinction, and conversion intent before handing off to the Lead or Planner.
 6. Treat generated code as a reference implementation, not final production code; align it with the target project's component system and technical constraints during planning and building.
+7. Keep design investigations bounded: name the target screens or flows, inspect only the relevant references, and stop at the agreed evidence and decision. If more context is needed, ask the user or leading agent, or explicitly ask permission to dig deeper. If a fresh session is necessary, begin it with a compact handoff covering the objective, relevant files, decisions, constraints, evidence, open questions, and next action.
 
 ## Tools, skills, and references
 
