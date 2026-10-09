@@ -1,6 +1,6 @@
 # Skills catalog
 
-This is a reference registry for capability candidates discovered during DAO V1 planning. Entries are not installed, connected, approved for use, forked, or starred unless a later decision says so.
+This is a reference registry for capability candidates discovered during DAO V1 planning. Entries are not installed, connected, approved for use, forked, or starred unless a later decision says so; the Coolify MCP row records the explicitly connected local Deployer/Ops profiles.
 
 ## Candidate capabilities
 
@@ -15,6 +15,8 @@ This is a reference registry for capability candidates discovered during DAO V1 
 | Google Search Console API | API | Search performance data for owned sites | deferred until an owned site needs measurement | [Google](https://developers.google.com/webmaster-tools/v1/searchanalytics) |
 | Apollo | API / future integration | Client discovery, enrichment, and outreach workflow data | deferred until Research/Ops defines permission and outreach rules | [Apollo](https://docs.apollo.io/reference/apollo-api) |
 | SkillOpt | Skill optimization research project | Later evaluation of stable skills using scored trajectories | noted; not a current DAO tool | [Microsoft](https://github.com/microsoft/SkillOpt) |
+| Buzz VPS browser/mobile setup | Operational runbook | Safe, staged setup and verification of the Buzz relay's Desktop/Mobile WebSocket pairing path | prepared; live deployment not authorized | [Buzz](https://github.com/block/buzz) |
+| Coolify built-in MCP server | MCP | Token-scoped Coolify infrastructure inspection and explicitly approved operations | connected to Pi WSL Deployer/Ops profiles; not available to Head by default | [Coolify MCP](https://coolify.io/docs/integrations/mcp) |
 
 ## Evaluation rules
 

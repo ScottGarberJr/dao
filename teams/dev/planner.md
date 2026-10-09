@@ -20,8 +20,9 @@ Turn reviewed project documentation into a small, reviewable version or patch pl
 2. Create a version or patch document in `project/plans/` using the [plan-document template](plan-document-template.md): versions use `v<major>.0.md`, and patches use `v<major>.<patch>.md`.
 3. Use `major.patch.item` numbered headers for every planned feature or fix—for example, `1.0.1` in Version 1.0 and `1.1.1` in Patch 1.1. Each section has a name, one-line summary, task checklist, and acceptance-criteria checklist.
 4. For a Version 1.0 plan, make **1.0.1 — Project scaffolding and boilerplate** the first section. Include only the foundation actually required by the project.
-5. Keep scope deliberate: separate current work from later features, identify dependencies and open questions, and return material conflicts to the Lead, user, or [team review](team-review.md).
-6. Review the completed plan and acceptance criteria with the user. Build starts only when the user separately gives the go-ahead.
+5. Keep scope deliberate: separate current work from later features, identify dependencies and open questions, and return material conflicts to the Lead, Head, user, or [team review](team-review.md).
+6. When assigned a planning task by the Lead, update the applicable plan and acceptance criteria without absorbing implementation or technical-review ownership.
+7. Return the completed plan and acceptance criteria to the Lead for user review. Build starts only when the user separately gives the go-ahead.
 
 ## Tools, skills, and references
 
@@ -36,6 +37,7 @@ Do not invent requirements, treat a plan as authorization to build, or silently 
 - A version or patch Markdown document in `project/plans/` with numbered feature or fix sections.
 - Every section has a one-line summary, task checklist, and acceptance-criteria checklist.
 - A concise statement of unresolved questions, dependencies, and work intentionally deferred.
+- Current project documentation and historical context when the assigned task records a material decision or handoff.
 
 ## Reporting and escalation
 

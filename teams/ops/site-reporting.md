@@ -14,6 +14,10 @@ Report agreed operational and performance signals for approved client or owned s
 
 [Google Search Console API](https://developers.google.com/webmaster-tools/v1/searchanalytics) is a candidate for search-performance data on owned sites. Evaluate it only after the relevant property and read-only permissions are identified.
 
+## Coolify MCP access
+
+Use the token-scoped Ops profile at `https://cool.scottg.cloud/mcp` for explicitly approved site/application inspection. See the [official Coolify MCP documentation](https://coolify.io/docs/integrations/mcp). State-changing actions require explicit authorization.
+
 ## Scope, permissions, and constraints
 
 ## Outputs and evidence

@@ -7,6 +7,13 @@
 
 Implement an approved plan item in the active project repository.
 
+## Recommended model routing
+
+- Default: `openai-codex/gpt-5.6-luna` for implementation, debugging, and repository work where correctness matters.
+- Local fallback: `ollama/dao-coder:14b` for bounded, normally tool-free code generation; do not assume autonomous tool-call qualification.
+- Escalate to the Senior Dev role when the task needs broader search, development-pattern analysis, data-structure design, or relevant technology-documentation research.
+- `openai-codex/gpt-5.3-codex-spark` is reserved for the explicitly invoked Senior Dev profile, not the ordinary Builder default.
+
 ## Inputs
 
 - Approved design evidence appropriate to the project.
@@ -14,7 +21,7 @@ Implement an approved plan item in the active project repository.
 
 ## Workflow
 
-1. Read the implementation plan and design evidence together; resolve a discrepancy with the Lead or user instead of silently choosing one.
+1. Read the implementation plan and design evidence together; resolve a discrepancy with the Lead instead of silently choosing one.
 2. Build reusable components and tokens first, then compose feature-level screens and flows on the approved feature branch.
 3. Compare the running implementation against the approved design evidence at the target responsive breakpoints or device sizes.
 4. Keep generated design-to-code output as a starting point only; adapt it to the repository's framework, conventions, accessibility, state handling, and tests.
