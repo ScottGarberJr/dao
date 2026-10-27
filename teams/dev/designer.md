@@ -21,13 +21,14 @@ Define implementation-facing UX/UI direction, visual constraints, interaction be
 
 ## Workflow
 
-1. Review the discovery, reference, sketch, and project constraints before proposing a design direction.
-2. By default, discuss findings, design directions, tradeoffs, and proposed changes with the user before doing design work.
-3. Use the available design capability when appropriate: Figma, an HTML prototype, screenshots, sketches, or an existing UI. Figma is optional, and native Figma edits require task-level authorization.
-4. Use the [project design-document template](design-document-template.md) to create or update the project's default `project/docs/design.md`. Link the relevant evidence. When a client requests it or the design warrants it, split sections into `project/docs/design/` while retaining `project/docs/design.md` as the entry-point index and summary.
-5. Review hierarchy, usability, responsive behavior, accessibility, visual distinction, and conversion intent before handing off to the Lead or Planner.
-6. Treat generated code as a reference implementation, not final production code; align it with the target project's component system and technical constraints during planning and building.
-7. Keep design investigations bounded: name the target screens or flows, inspect only the relevant references, and stop at the agreed evidence and decision. If more context is needed, ask the user or leading agent, or explicitly ask permission to dig deeper. If a fresh session is necessary, begin it with a compact handoff covering the objective, relevant files, decisions, constraints, evidence, open questions, and next action.
+1. Follow the staged workflow: [discovery](design-discovery.md), [planning](design-planning.md), [design system](design-system.md), [UI creation](design-ui-creation.md), and [polish](design-polish.md).
+2. Review the discovery, reference, sketch, and project constraints before proposing a design direction.
+3. By default, discuss findings, design directions, tradeoffs, and proposed changes with the user before doing design work.
+4. Use the available design capability when appropriate: Figma, an HTML prototype, screenshots, sketches, or an existing UI. Figma is optional, and native Figma edits require task-level authorization.
+5. Use the [project design-document template](design-document-template.md) and [planning template](design-planning-template.md) to create or update the project's default `project/docs/design.md`. Keep consistently useful supporting records in `project/docs/design/`, especially `references/`, `mockups/`, and `design-system.md`, while retaining `project/docs/design.md` as the entry-point index and summary.
+6. Review hierarchy, usability, responsive behavior, accessibility, visual distinction, and conversion intent before handing off to the Lead or Planner.
+7. Treat generated code as a reference implementation unless the Lead explicitly assigns production implementation; production work follows the Builder and Tester workflow.
+8. Keep design investigations bounded: name the target screens or flows, inspect only the relevant references, and stop at the agreed evidence and decision. If more context is needed, ask the user or leading agent, or explicitly ask permission to dig deeper. If a fresh session is necessary, begin it with a compact handoff covering the objective, relevant files, decisions, constraints, evidence, open questions, and next action.
 
 ## Tools, skills, and references
 
@@ -41,6 +42,10 @@ All entries below are candidates only. None is installed, connected, or approved
 - [Figma Code Connect](https://developers.figma.com/docs/figma-mcp-server/code-connect-integration/) — candidate way to connect real code components to Figma components, improving design-to-code consistency.
 - [Vercel Web Interface Guidelines](https://vercel.com/design/guidelines) — candidate review skill for web UI accessibility, UX, and implementation quality; use it as an audit after a design direction exists, not as a substitute for the direction.
 - [shadcn MCP server](https://ui.shadcn.com/docs/mcp) — candidate component-registry interface for projects that deliberately use shadcn-compatible components. Review selected components and dependencies before installation; it is not a general design source.
+- [Elaya AI Design Skills](https://github.com/elayadesign/ai-design-skills) — reference for landing-page intake, content realism, complete UI states, and still-first design-to-motion workflows; adapt principles rather than installing blindly.
+- [Google DESIGN.md](https://github.com/google-labs-code/design.md) — optional machine-readable token and design-system specification.
+- [Playwright](https://playwright.dev/) — candidate repeatable browser verification and screenshot tooling.
+- [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) — candidate narrow browser inspection capability.
 
 [ChatGPT Sites](https://openai.com/academy/chatgpt-sites/) is not a design tool. It belongs only in `DEPLOY.md` when evaluating deployment of an approved site demo.
 
@@ -52,6 +57,7 @@ Discussion comes first by default. Do not make Figma changes, overwrite an appro
 
 - Approved design evidence appropriate to the task: Figma frames, a reviewed prototype, screenshots, sketches, or existing UI.
 - A project-specific `project/docs/design.md` based on the template, linking to the evidence. For expanded projects, it remains the index to any supporting files in `project/docs/design/`.
+- A project-specific `project/docs/design/design-system.md` when the design system is substantial enough to maintain separately; use [design-system-document-template.md](design-system-document-template.md).
 - A clear handoff of design evidence and documentation to the Lead or [DevTeam review](team-review.md), alongside the requirements and architecture documents.
 
 ## Reporting and escalation

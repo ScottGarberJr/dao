@@ -11,7 +11,7 @@ The **Lead** is the user's secondary technical contact and the senior developer 
 The canonical implementation procedure is [development cycle](development-cycle.md). It defines the lifecycle, handoffs, evidence expectations, and user approval gates described below.
 
 1. Perform bounded discovery through [discovery](discovery.md) when the project needs it.
-2. Define or update requirements, design, architecture, and coding conventions with the user and Lead. Use [designer](designer.md) for implementation-facing UX/UI direction.
+2. Define or update requirements, design, architecture, and coding conventions with the user and Lead. Use [designer](designer.md) and its staged design workflow for implementation-facing UX/UI direction.
 3. Conduct [team review](team-review.md) before planning or implementation when scope, design, or architecture needs reconciliation.
 4. Create a version or patch plan with [planner](planner.md), then build on feature branches or isolated worktrees.
 5. Delegate implementation to [builder](builder.md), review it through the Lead, and verify it with [tester](tester.md).
@@ -35,6 +35,13 @@ DevTeam performs technical planning, design, implementation, testing, code revie
 - [Reviewer](reviewer.md) — optional independent technical or quality review.
 - [Deployer](deployer.md) — explicitly authorized release preparation.
 - [discovery](discovery.md) — client/project discovery and references.
+- [design discovery](design-discovery.md) — bounded design research, reference evidence, and Figma discovery-canvas handoff.
+- [design planning](design-planning.md) — selected direction, scope, rationale, and design handoff.
+- [design planning template](design-planning-template.md) — planning sections for `project/docs/design.md`.
+- [design system](design-system.md) — tokens, components, states, accessibility, and design-system handoff.
+- [design-system document template](design-system-document-template.md) — project-specific design-system record for `project/docs/design/design-system.md`.
+- [UI creation](design-ui-creation.md) — prototypes and screen/section reference artifacts before or alongside Builder implementation.
+- [design polish](design-polish.md) — visual QA, interaction refinement, and purposeful motion.
 - [team review](team-review.md) — requirements, design, and architecture review
 - [development cycle](development-cycle.md) — lifecycle, handoffs, evidence, and approval gates.
 
