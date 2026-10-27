@@ -58,7 +58,7 @@ List the tokens, components, assets, and states that Design System work must def
 
 ## Evidence index
 
-Link references, Figma pages or frames, sketches, prototypes, screenshots, brand assets, and related requirements or architecture documents.
+Link `project/docs/design/references.md`, Obsidian inspiration notes, Figma pages or frames, sketches, prototypes, screenshots, brand assets, and related requirements or architecture documents.
 
 ## Open questions
 
