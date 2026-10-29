@@ -10,8 +10,8 @@ Translate the approved design direction into reusable visual and interaction rul
 
 ## Workflow
 
-1. Read the approved direction in `project/docs/design.md`, project architecture, existing tokens, and component conventions.
-2. Define semantic color roles, typography, spacing, sizing, shapes, borders, elevation, imagery, and motion posture.
+1. Read the approved direction and direction lock in `project/docs/design.md`, project architecture, existing tokens, and component conventions. If the direction lock is missing, return to Design Planning before inventing tokens.
+2. Define semantic color roles, typography, spacing, sizing, shapes, borders, elevation, imagery, and motion posture. Preserve and operationalize the recorded typography posture, color and contrast posture, density, motion posture, and explicit anti-patterns to avoid.
 3. Define reusable components and their states: default, hover, focus, active, disabled, loading, empty, error, and success where relevant.
 4. Map design components to production components. Record where a visual pattern should remain a prototype-only treatment.
 5. Check contrast, responsive behavior, keyboard access, reduced motion, and platform differences.

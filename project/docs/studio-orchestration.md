@@ -22,7 +22,7 @@ The organization is a small studio rather than a nautical hierarchy.
 | Researcher | Performs bounded investigation and returns sources, findings, and uncertainty. |
 | Deployer | Prepares and performs an explicitly authorized release workflow. |
 
-The user's normal conversations are with Gugu, Head, and a project's Lead. The user may also enter a focused Designer conversation for a project. Buzz may additionally expose a local Windows IT agent for approved workstation support. Other roles are normally delegated staff rather than standing user-facing contacts.
+The user's normal conversations are with Gugu, Head, and a project's Lead. The user may also enter a focused Designer conversation for a project. Hermes may additionally expose a local Windows IT agent for approved workstation support. Other roles are normally delegated staff rather than standing user-facing contacts.
 
 ## Role separation and parallel documentation
 
@@ -33,10 +33,10 @@ Roles should stay within their declared scopes to reduce missed DAO requirements
 The intended Herdr organization is:
 
 - One Head workspace rooted at `/home/scottg/dev`, containing the portfolio and registered projects.
-- One project workspace per active project, mapped one-to-one to the project's GitHub repository and Buzz project channel.
+- One project workspace per active project, mapped one-to-one to the project's GitHub repository and Hermes project context.
 - One persistent Head conversation and one persistent Lead conversation per project when the user creates them.
 - Short-lived Designer, Planner, Builder, Tester, Reviewer, Scribe, Deployer, and Researcher agents in the matching project workspace, normally isolated in task worktrees when they modify code.
-- A task's Herdr workspace, repository/worktree, and Buzz channel identify the same project; workspace placement is separate from the worker's filesystem working directory.
+- A task's Herdr workspace, repository/worktree, and Hermes project context identify the same project; workspace placement is separate from the worker's filesystem working directory.
 - Head starts from `/home/scottg/dev`; project staff normally start from the corresponding project repository or worktree while reading explicitly selected DAO and project documents.
 
 Short specialist display names should be easy to scan, such as `dev-12`, `test-04`, or `design-03`. The internal identity remains a stable project ID, task ID, role, agent incarnation, repository, and worktree even when the display name is short. Agents belonging to a project should visually share the project's color when Herdr supports stable workspace- or project-derived agent styling. Color is a convenience, never the only carrier of identity or status.
@@ -101,17 +101,15 @@ The local roster is intentionally limited to:
 
 Qualification remains task-specific. Broad repository reconnaissance should be partitioned when practical, and a failed local run must be reported as incomplete evidence rather than silently treated as successful.
 
-## Pi, Herdr, Buzz, and delegated capabilities
+## Pi, Herdr, Hermes, and delegated capabilities
 
 The intended runtime mapping is:
 
 - **Pi:** persistent Head and project Lead conversations, with bounded staff roles delegated through the approved Pi/Herdr capability.
 - **Herdr:** one portfolio workspace rooted at `/home/scottg/dev`, plus one workspace per project. A delegated worker receives an explicit project workspace, repository/worktree, role, model, tool set, and task brief.
-- **Buzz:** user-facing Head and project Lead channels, plus Gugu and the separate local Windows IT agent. A project's Buzz channel maps one-to-one to its Herdr workspace and GitHub repository.
+- **Hermes:** future user-facing Head and project Lead conversations, plus Gugu and the separate local Windows IT agent. Hermes project context should map one-to-one to its Herdr workspace and GitHub repository.
 - **DAO:** supplies the role definitions, skills, project-document conventions, and approval boundaries; it is not injected wholesale into every prompt.
 - **Pi artifacts:** are a presentation capability. Scribe owns status reports, timelines, dashboards, and evidence summaries; Designer owns prototypes, Tester owns test reports, Lead/Reviewer owns technical walkthroughs, and Deployer owns release-readiness reports.
-
-The current local Buzz installation remains a single local-first member. No full Head/Lead/staff Buzz roster has been created, no Luna or other subscription-backed model has been exposed to Buzz, and no Buzz-core change is authorized by this document.
 
 Using Codex-account models inside Pi and launching Codex CLI as a task agent are different integrations:
 
@@ -126,7 +124,7 @@ Capabilities such as image generation or Coolify access should be routed to a wo
 
 The personal assistant's user-facing name is **Gugu**; its portable DAO role remains **Gu**, after 顾, to distinguish the assistant from **DAO**, the operating model or "way things are done." The existing `teams/assistant/` directory remains the implementation-neutral filesystem location.
 
-The Discord or Buzz bot and its user-facing identity should use Gugu when that work is undertaken. A Gu-specific n8n subdomain is also a coherent naming choice if the endpoint is dedicated to Gu workflows; infrastructure naming must not imply that n8n is the DAO orchestrator. DNS, credentials, callback URLs, webhook endpoints, and migration or compatibility needs require a separately approved implementation task.
+A future Hermes interface or bot and its user-facing identity should use Gugu when that work is undertaken. A Gu-specific n8n subdomain is also a coherent naming choice if the endpoint is dedicated to Gu workflows; infrastructure naming must not imply that n8n is the DAO orchestrator. DNS, credentials, callback URLs, webhook endpoints, and migration or compatibility needs require a separately approved implementation task.
 
 Gugu should eventually be able to send a message to Head or a named project Lead and have it appear in the persistent Pi conversation. Head or a Lead should be able to send Gugu a notification or priority-marked task for delivery to the user. This bidirectional priority channel is a retained future requirement, not an immediate implementation authorization.
 

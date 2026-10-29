@@ -15,14 +15,33 @@ Improve the approved UI after the base experience works. Polish covers hierarchy
 3. Audit hierarchy, typography, spacing, contrast, density, alignment, component consistency, and content realism.
 4. Check hover, active, focus, loading, empty, error, success, disabled, and reduced-motion states.
 5. Add motion only when it clarifies state change, continuity, feedback, or progression. Avoid decorative motion that delays or distracts.
-6. Use `transform` and `opacity` for most animation, respect `prefers-reduced-motion`, and use `IntersectionObserver` for viewport-triggered web reveals rather than an unthrottled scroll listener.
-7. Recheck the same route, viewport, state, and data after the change.
-8. Record before/after evidence, remaining caveats, and any deviation from the design system.
+6. Apply the Animation guiderails:
+   - avoid animation patterns that trigger layout recalculation every frame;
+   - favor efficient properties such as transforms and opacity;
+   - use motion to communicate progression or state, not as decoration.
+7. Respect `prefers-reduced-motion`, and use `IntersectionObserver` for viewport-triggered web reveals rather than an unthrottled scroll listener.
+8. Recheck the same route, viewport, state, and data after the change.
+9. Record before/after evidence, remaining caveats, and any deviation from the design system.
+
+## Explicit-Anti-Slop Review includes:
+
+- generic hero layouts;
+- arbitrary gradients;
+- excessive cards;
+- repetitive rounded controls;
+- default font choices;
+- decorative motion without purpose;
+- stock imagery that does not match the product.
+
+Design Polish must not repair around a failed Design Review. Return to UI Creation or Design Planning when the base direction does not stand on its own.
 
 Motion for a product should remain in the product’s implementation. A showcase animation or MP4/GIF is optional evidence and should be treated as a separate artifact, not as a substitute for usable product behavior.
 
 ## Tools, skills, and references
 
+- [Design Review](design-review.md) — pre-polish judgment gate and anti-slop review.
+- [Site Animations](../../skills/site-animations.md) — creation-time animation purpose, performance, and reduced-motion guiderails.
+- [GSAP Guidance](../../skills/gsap-guidance.md) — GSAP-specific motion when the project needs it.
 - [DAO visual evidence skill](../../skills/visual-evidence.md) — before/after evidence, privacy, and PR formatting.
 - [Elaya AI Design Skills](https://github.com/elayadesign/ai-design-skills) — reference for still-first motion, visual stories, reduced motion, and deterministic export ideas.
 - [Emil Kowalski skills](https://github.com/emilkowalski/skills) — candidate motion principles for product interfaces.

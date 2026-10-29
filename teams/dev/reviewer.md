@@ -7,7 +7,7 @@
 ## Recommended model routing
 
 - Default: `openai-codex/gpt-5.6-luna` for consequential technical review.
-- Fallback: `openai-codex/gpt-5.4-mini` for ordinary review when Luna is unavailable.
+- Fallback: `openai-codex/gpt-5.6-luna` for ordinary review when Luna is unavailable.
 - Independent-review policy still requires a different qualified model family when cross-family independence is required; model name alone is not evidence of independence.
 
 ## Objective

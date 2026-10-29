@@ -34,6 +34,7 @@ DevTeam performs technical planning, design, implementation, testing, code revie
 - [Tester](tester.md) — independent verification and evidence.
 - [Reviewer](reviewer.md) — optional independent technical or quality review.
 - [Deployer](deployer.md) — explicitly authorized release preparation.
+- [Web Actor](web-actor.md) — authorized browser interaction with allowlisted web UIs; not a general scraper or visual QA role.
 - [discovery](discovery.md) — client/project discovery and references.
 - [design discovery](design-discovery.md) — bounded design research, reference evidence, and Figma discovery-canvas handoff.
 - [design planning](design-planning.md) — selected direction, scope, rationale, and design handoff.
@@ -41,13 +42,14 @@ DevTeam performs technical planning, design, implementation, testing, code revie
 - [design system](design-system.md) — tokens, components, states, accessibility, and design-system handoff.
 - [design-system document template](design-system-document-template.md) — project-specific design-system record for `project/docs/design/design-system.md`.
 - [UI creation](design-ui-creation.md) — prototypes and screen/section reference artifacts before or alongside Builder implementation.
+- [design review](design-review.md) — pre-polish judgment gate, anti-slop review, and direction check.
 - [design polish](design-polish.md) — visual QA, interaction refinement, and purposeful motion.
 - [team review](team-review.md) — requirements, design, and architecture review
 - [development cycle](development-cycle.md) — lifecycle, handoffs, evidence, and approval gates.
 
 ## Interfaces and identity
 
-Each active project should map one-to-one across its Herdr workspace, GitHub repository, and Buzz project channel. Head uses the `/home/scottg/dev` portfolio workspace; project Lead and staff agents use the corresponding project workspace and repository/worktree. The user normally interacts with Head, the project Lead, and optionally Designer through Buzz.
+Each active project should map one-to-one across its Herdr workspace, GitHub repository, and Hermes project context. Head uses the `/home/scottg/dev` portfolio workspace; project Lead and staff agents use the corresponding project workspace and repository/worktree. The user normally interacts with Head, the project Lead, and optionally Designer through Hermes when that interface is available.
 
 ## Standards and escalation
 

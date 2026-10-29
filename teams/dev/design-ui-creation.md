@@ -26,11 +26,22 @@ Production code belongs to the project’s normal implementation workflow and is
 1. Select one bounded screen, section, or flow from the approved design plan.
 2. Inspect the actual project stack, routes, components, tokens, and content before inventing UI.
 3. Reuse the approved design system and existing components where possible.
-4. Create the smallest useful artifact: a static mockup, clickable prototype, component lab, or project-stack implementation.
-5. Include important default, loading, empty, error, success, focus, disabled, and responsive states.
-6. Verify the primary path and capture visual evidence at the affected viewport or state.
-7. Record deviations, assumptions, missing assets, and implementation questions.
-8. Hand the artifact to the Lead, Planner, or Builder with exact paths and evidence.
+4. At phase entry, list the relevant skills, tools, and references with a brief summary and recommendation. For UI Creation, the minimum capability scan is:
+   - **UI UX Pro Max** — category-fit visual direction; **recommend** when the product needs a stronger point of view.
+   - **One visual preset** — Minimalist UI, Industrial Brutalist UI, Front-end UI/UX, or Premium/Luxury UI; **recommend** exactly one when a visual posture is approved, otherwise ask.
+   - **Mobile UI Principles** — touch-first hierarchy, reachability, and platform states; **recommend** for any mobile flow.
+   - **SwiftUI** — native Apple conventions; **recommend** for SwiftUI projects.
+   - **Expo** — cross-platform React Native conventions; **recommend** for Expo projects.
+   - **Site Animations** — purpose, performance, and reduced-motion guiderails; **recommend** whenever motion is proposed.
+   - **GSAP Guidance** — GSAP-specific timelines and scroll motion; **recommend** only when the project needs GSAP or complex web motion.
+   - **Shadcn MCP** — reusable registry components; **recommend** only for Shadcn-compatible projects after checking dependencies.
+   - **Playwright** — repeatable browser checks and screenshots; **recommend** when the route can be exercised in a browser.
+5. Select the relevant guidance skill or ask the user whether to use it. Do not stack conflicting visual presets.
+6. Create the smallest useful artifact: a static mockup, clickable prototype, component lab, or project-stack implementation.
+7. Include important default, loading, empty, error, success, focus, disabled, and responsive states.
+8. Verify the primary path and capture visual evidence at the affected viewport or state.
+9. Record deviations, assumptions, missing assets, and implementation questions.
+10. Hand the artifact to the Lead, Planner, or Builder with exact paths and evidence.
 
 Create one screen or section at a time. Do not silently expand a prototype into unrelated pages or production features.
 

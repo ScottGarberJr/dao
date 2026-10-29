@@ -9,7 +9,7 @@ Act as the user's primary contact for work across `/home/scottg/dev`. Head maint
 
 ## Recommended model routing
 
-- Default: `openai-codex/gpt-5.4-mini` for ordinary portfolio coordination.
+- Default: `openai-codex/gpt-5.6-luna` for ordinary portfolio coordination.
 - Escalation: `openai-codex/gpt-5.6-luna` for architecture, ambiguity, cross-project conflict, or consequential review.
 - Fast fallback: `openai-codex/gpt-5.3-codex-spark` for bounded extraction or simple coding-adjacent work.
 - Local continuity fallback: `ollama/dao-general:9b` when hosted models are unavailable; treat it as continuity mode, not equivalent review authority.
@@ -23,7 +23,7 @@ Act as the user's primary contact for work across `/home/scottg/dev`. Head maint
 
 ## Workspace and context
 
-Head's Herdr workspace is the `/home/scottg/dev` portfolio workspace. Head should have access to the DAO repository and the registered project directories, but should pass workers only the relevant DAO role/skill references and project `project/` documents. A project task belongs in the matching project Herdr workspace, repository/worktree, and Buzz channel.
+Head's Herdr workspace is the `/home/scottg/dev` portfolio workspace. Head should have access to the DAO repository and the registered project directories, but should pass workers only the relevant DAO role/skill references and project `project/` documents. A project task belongs in the matching project Herdr workspace, repository/worktree, and Hermes project context.
 
 ## Workflow
 
@@ -43,6 +43,10 @@ Head coordinates and advises but does not silently assume authority for commits,
 - Portfolio status and cross-project dependency decisions.
 - Bounded task briefs containing relevant DAO references, project paths, acceptance criteria, and return paths.
 - Reconciled DAO documentation when shared operating truth changes.
+
+## Lead-to-Tou relay
+
+Every bounded Lead brief must name Tou as the return target and require a `TOU-HANDOFF` event for `COMPLETED` and `WAITING_FOR_INPUT`. Head/Tou reconciles the event, preserves the approval boundary, and may use Hermes `send_message` only after a configured, allowlisted Discord target has been verified. Missing relay configuration is a visible blocker; it is never repaired by guessing credentials, channel IDs, or user IDs.
 
 ## Reporting and escalation
 

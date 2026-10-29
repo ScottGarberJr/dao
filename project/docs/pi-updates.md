@@ -2,7 +2,7 @@
 
 Status: Phase 1 implemented (2026-10-08)
 
-This document records the bounded design for two Pi improvements: making user prompts easier to identify while scrolling and adding a native `/usage` extension that can later supply a clickable Buzz dashboard. Phase 1 now also exposes the live subscription quota when Pi has a supported native OpenAI Codex account.
+This document records the bounded design for two Pi improvements: making user prompts easier to identify while scrolling and adding a native `/usage` extension that can later supply a clickable Hermes dashboard. Phase 1 now also exposes the live subscription quota when Pi has a supported native OpenAI Codex account.
 
 ## Current supported behavior
 
@@ -37,16 +37,16 @@ Implemented a global Pi extension at `/home/scottg/.pi/agent/extensions/usage.ts
 2. Derive a normalized snapshot from the active branch, including session ID/path, timestamps, message/tool counts, input/output/cache tokens, cost, and per-provider/model totals.
 3. Include assistant usage, tool-result nested usage, and usage-bearing compaction/branch-summary entries. This mirrors Pi's `getSessionStats()` implementation. Arbitrary `usage` entries are excluded because Pi's `/session` totals exclude them; this keeps reconciliation deterministic.
 4. Render a compact native TUI summary first. A later interactive view can use `ctx.ui.custom()` with keyboard navigation; do not replace Zentui's Footer or modify Pi core.
-5. Add a machine-readable `json` representation with a versioned schema. JSON is the future Buzz integration boundary, not terminal scraping.
+5. Add a machine-readable `json` representation with a versioned schema. JSON is the future Hermes dashboard integration boundary, not terminal scraping.
 6. Refresh displayed data after session/model/tree/message lifecycle events, with no background network calls and no credential access.
 
-The implementation is read-only and active-branch/session-scoped. `/usage` renders a persistent native widget above the editor; `/usage summary` selects the human-readable view, `/usage json` selects the versioned DTO, and `/usage clear` removes it. It does not write exports, start an HTTP server, or send Buzz messages.
+The implementation is read-only and active-branch/session-scoped. `/usage` renders a persistent native widget above the editor; `/usage summary` selects the human-readable view, `/usage json` selects the versioned DTO, and `/usage clear` removes it. It does not write exports, start an HTTP server, or send Hermes messages.
 
 When the widget is active, the extension adds a subscription-quota section before the session totals. It shows 5-hour and weekly remaining percentages with visual bars, and displays a reset countdown only when the response supplies a supported `reset_at`/`resetAt` timestamp or `reset_after_seconds`/`resetAfterSeconds` duration. Missing reset fields are shown as `reset unavailable`; no reset time is inferred from the window length. Loading, unavailable, and stale states are explicit. The DTO keeps the same `dao.pi.usage.v1` schema and adds an optional `quota` object, so consumers that ignore the field remain compatible.
 
-### Phase 2: Buzz dashboard feed
+### Phase 2: Hermes dashboard feed
 
-Keep the usage snapshot independent from presentation. A future local adapter can consume the versioned JSON DTO and publish it through an approved local relay or dashboard service. Dashboard rows should carry stable session/entry identifiers and explicit action metadata so a click can request `/resume`, open a session, or show a usage detail without parsing display text. The transport, authentication boundary, retention, and whether the dashboard may control Pi remain decisions for the later Buzz design; none is enabled by this document.
+Keep the usage snapshot independent from presentation. A future local adapter can consume the versioned JSON DTO and publish it through an approved local relay or dashboard service. Dashboard rows should carry stable session/entry identifiers and explicit action metadata so a click can request `/resume`, open a session, or show a usage detail without parsing display text. The transport, authentication boundary, retention, and whether the dashboard may control Pi remain decisions for the later Hermes design; none is enabled by this document.
 
 Suggested initial DTO shape (subject to implementation tests):
 
@@ -110,11 +110,11 @@ These are installed package files, not repository-managed source. A `pi update`,
 
 1. **Accounting follow-up:** the current reducer mirrors Pi's accounting, but `/session` uses all entries while `/usage` intentionally uses the active branch. This difference should remain visible in any future dashboard label.
 2. **Interaction follow-up:** Phase 1 uses a native widget rather than a keyboard-navigable custom table. A richer table can be added without changing the DTO.
-3. **Buzz authority:** dashboard links may initially be read-only. Any click that resumes, switches, or sends to a Pi session needs an explicit transport and authorization decision.
+3. **Hermes authority:** dashboard links may initially be read-only. Any click that resumes, switches, or sends to a Pi session needs an explicit transport and authorization decision.
 
 ## Next action
 
-Restart Pi or run `/reload` before relying on the changed message style or newly discovered global command. Then run `/usage`, `/usage json`, and `/usage clear` in a normal TUI session. Compare a fixture's totals with `/session`, accounting for the deliberate active-branch versus all-entry scope difference. Buzz/dashboard integration remains out of scope.
+Restart Pi or run `/reload` before relying on the changed message style or newly discovered global command. Then run `/usage`, `/usage json`, and `/usage clear` in a normal TUI session. Compare a fixture's totals with `/session`, accounting for the deliberate active-branch versus all-entry scope difference. Hermes dashboard integration remains out of scope.
 
 ## Inspected references
 

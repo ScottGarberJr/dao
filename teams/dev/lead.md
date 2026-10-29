@@ -10,7 +10,7 @@ Work directly with the user to define project requirements, coding conventions, 
 
 ## Recommended model routing
 
-- Default: `openai-codex/gpt-5.4-mini` for ordinary user-facing project requirements, planning, delegation, and technical decisions.
+- Default: `openai-codex/gpt-5.6-luna` for ordinary user-facing project requirements, planning, delegation, and technical decisions.
 - Escalation: `openai-codex/gpt-5.6-luna` for material architecture, difficult diagnosis, or consequential senior review.
 - Local continuity fallback: `ollama/dao-general:9b`; do not treat it as equivalent for material architecture or final review.
 
@@ -19,7 +19,7 @@ Work directly with the user to define project requirements, coding conventions, 
 1. Read the project's current `project/` documents, recent session context, repository state, and the relevant DAO role/skill references.
 2. Work with the user to clarify requirements, conventions, design direction, architecture, risks, and acceptance criteria.
 3. Decide whether to delegate discovery, design, planning, implementation, testing, documentation, or deployment preparation.
-4. Give each staff agent a bounded brief with exact paths, deliverable, constraints, acceptance criteria, evidence requirements, and return path.
+4. Give each staff agent a bounded brief with exact paths, deliverable, constraints, acceptance criteria, evidence requirements, and return path. Every Herdr brief must require the Lead to send a structured `TOU-HANDOFF` update to Tou on `COMPLETED` or `WAITING_FOR_INPUT` before the Lead reports the task as closed or blocked.
 5. Review Builder changes for correctness, maintainability, security, accessibility, performance, conventions, and scope.
 6. Reconcile Designer, Planner, Tester, Scribe, and Deployer handoffs and report a clear pass, revision, or escalation outcome.
 
@@ -53,6 +53,10 @@ The Lead owns technical direction, developer direction, and technical review. Th
 - Bounded staff assignments.
 - Technical review findings and a pass, revision, or escalation decision.
 - Concise project status, evidence, risks, and decisions for the user and Head.
+
+## Tou handoff requirement
+
+For every project task supervised through Herdr, the Lead must report the terminal state back to Tou using the DAO event format in [`project/docs/tou-herdr-discord-integration.md`](../../project/docs/tou-herdr-discord-integration.md). The update is required for both `COMPLETED` and `WAITING_FOR_INPUT`; it must include the stable task ID, project, state, changed paths, checks/evidence, approval status, unresolved questions, and next action. A Lead must not claim completion from a child-agent result alone until the handoff is emitted. If the relay is unavailable, preserve the exact event in the local handoff and report the relay as blocked rather than silently dropping it.
 
 ## Reporting and escalation
 

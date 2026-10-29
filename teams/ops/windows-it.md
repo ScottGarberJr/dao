@@ -2,7 +2,7 @@
 
 - Team: OpsTeam
 - Status: proposed — pending implementation review
-- Interface: optional directly addressable Buzz agent backed by the shared WSL Pi/Herdr control plane.
+- Interface: optional directly addressable Hermes agent backed by the shared WSL Pi/Herdr control plane.
 
 ## Objective
 
@@ -10,7 +10,7 @@ Provide bounded support for the user's local Windows workstation: inspect and ex
 
 ## Recommended model routing
 
-- Default: `openai-codex/gpt-5.4-mini` for ordinary workstation diagnosis.
+- Default: `openai-codex/gpt-5.6-luna` for ordinary workstation diagnosis.
 - Escalation: `openai-codex/gpt-5.6-luna` for complex system or security diagnosis.
 - Local fallback: `ollama/dao-general:9b` for bounded inspection where no hosted model is required.
 
@@ -32,4 +32,4 @@ The Ops profile can reach the token-scoped Coolify MCP at `https://cool.scottg.c
 
 ## Runtime direction
 
-Keep one WSL Pi/Herdr control plane. The Windows IT role may be directly addressable from Buzz, but it is not a second Pi installation and is not a project Lead or Builder. Its project/channel identity should remain distinct from project workspaces.
+Keep one WSL Pi/Herdr control plane. The Windows IT role may be directly addressable from Hermes, but it is not a second Pi installation and is not a project Lead or Builder. Its project/channel identity should remain distinct from project workspaces.

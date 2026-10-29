@@ -13,7 +13,13 @@
 
 ## Shared capabilities
 
-No Research-specific tool or skill is enabled. Candidate MCPs, APIs, repositories, and skills are cataloged in [`tools/catalog.md`](../../tools/catalog.md). Define a tool's use case, permissions, safety boundary, and owning-team responsibility before adoption.
+The Research team owns the bounded [Scrapling research capability](../../skills/scrapling-research.md). It is guidance only: Scrapling is not installed, connected, approved, or authorized for production use. Use the [Scrapling workflow](scrapling-research.md) for scope, review, and handoff requirements.
+
+Other candidate MCPs, APIs, repositories, and skills are cataloged in [`skills/catalog.md`](../../skills/catalog.md). Define a tool's use case, permissions, safety boundary, and owning-team responsibility before adoption.
+
+## Role and workflow expectations
+
+Research owns the question, finite public-web scope, source quality, privacy/licensing review, rate limits, and evidence handoff. Research must prefer official APIs, feeds, or exports where sufficient, and must stop rather than broaden collection when access, terms, robots guidance, or licensing is unclear. The capability does not authorize authenticated access, personal-data collection, bulk crawling, or runtime installation.
 
 ## Notes
 

@@ -9,7 +9,7 @@ Verify approved work with evidence proportionate to its risk before the user rev
 
 ## Recommended model routing
 
-- Default: `openai-codex/gpt-5.4-mini` for test planning and execution guidance.
+- Default: `openai-codex/gpt-5.6-luna` for test planning and execution guidance.
 - Escalation: `openai-codex/gpt-5.6-luna` for high-risk verification or ambiguous failures.
 - Fast fallback: `openai-codex/gpt-5.3-codex-spark` for bounded mechanical test work.
 - Local fallback: `ollama/dao-general:9b` for extraction and bounded checks.

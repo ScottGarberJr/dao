@@ -8,7 +8,9 @@ Use this cycle for approved feature and fix work. Keep the work small enough tha
 
 ## Lifecycle
 
-`intake -> classify as pipeline or job -> clarify and prepare -> ready -> implementation -> testing -> Lead review -> final review -> commit/push -> PR or later merge -> close`
+`intake -> classify as pipeline or job -> clarify and prepare -> ready -> implementation -> design review when UI is affected -> polish when approved -> testing -> Lead review -> final review -> commit/push -> PR or later merge -> close`
+
+For UI work, the design subcycle is discovery -> planning with direction lock -> design system -> UI Creation -> Design Review -> Design Polish. Design Review happens before polish so visual refinement does not hide a weak direction.
 
 The Project Lead owns the project loop. Head coordinates across projects. The user remains the authority for material scope, commit, merge, and deployment decisions.
 

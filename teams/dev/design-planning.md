@@ -12,12 +12,21 @@ Turn discovery evidence into an approved design direction and an implementation-
 
 1. Read the discovery handoff, requirements, architecture constraints, and current `project/docs/design.md`.
 2. State the target users, primary tasks, scope, non-goals, constraints, and success criteria.
-3. Choose the screens or flows to design and identify their important states.
-4. Propose a small set of materially different directions when taste or risk is unresolved: conservative, strong-fit, and divergent are useful defaults.
-5. Compare directions against user goals, content, accessibility, responsive behavior, technical constraints, and evidence—not personal preference alone.
-6. Discuss the options with the user and Lead. Record the selected direction, rejected alternatives, assumptions, and unresolved questions.
-7. Update `project/docs/design.md` using the [design planning template](design-planning-template.md).
-8. Hand the approved direction to Design System work.
+3. Create and record a direction lock before UI Creation. It must include:
+   - product type;
+   - intended audience;
+   - chosen visual direction;
+   - typography posture;
+   - color and contrast posture;
+   - density;
+   - motion posture;
+   - explicit anti-patterns to avoid.
+4. Choose the screens or flows to design and identify their important states.
+5. Propose a small set of materially different directions when taste or risk is unresolved: conservative, strong-fit, and divergent are useful defaults.
+6. Compare directions against user goals, content, accessibility, responsive behavior, technical constraints, and evidence—not personal preference alone.
+7. Discuss the options with the user and Lead. Record the selected direction, rejected alternatives, assumptions, unresolved questions, and the applicable guidance skills; ask the user when a skill choice is material.
+8. Update `project/docs/design.md` using the [design planning template](design-planning-template.md).
+9. Hand the approved direction to Design System work.
 
 Do not create a large set of variants that leaves the project without a decision. Once a direction is selected, consolidate the evidence and archive or clearly label exploratory alternatives.
 
