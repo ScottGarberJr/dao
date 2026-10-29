@@ -28,7 +28,7 @@ Create a concise morning standup for Scott, save the complete report to the appr
 - Save the report only under the approved Obsidian path `Documents/Vaults/AGENTS/gu/standups/` using the date title convention `M.DD.YYYY - Weekday.md`.
 - Read the saved note back before reporting success.
 - The Discord delivery is schedule-authorized and must contain the report text. Do not send to another channel.
-- Hermes native cron delivery supports `text_to_speech`: the tool returns a `MEDIA:` path that Discord can deliver as an audio attachment. The current job does not request or send audio yet; enable it only after the cron prompt is updated and a test delivery is verified.
+- Hermes native cron delivery supports `text_to_speech`: the tool returns a `MEDIA:` path that Discord can deliver as an audio attachment. The scheduled job now requests audio before its text report; verify each delivery rather than claiming success from generation alone.
 - Do not commit mailbox contents, calendar details, weather responses, or standup reports to Git.
 
 ## Weather handling
