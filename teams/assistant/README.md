@@ -29,6 +29,7 @@ The current approved starting scope is read-only email retrieval/search plus SG 
 
 - [starting-sessions](starting-sessions.md) — V1 draft
 - [status-reports](status-reports.md) — V1 draft
+- [morning-standup-template](morning-standup-template.md) — daily scheduled standup report format.
 - [capture-to-inbox](capture-to-inbox.md) — V1 draft
 - [email-management](email-management.md) — V1 draft
 - [pinboard](pinboard.md) — V1 pinboard and topic-note SOP
